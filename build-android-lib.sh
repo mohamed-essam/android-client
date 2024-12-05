@@ -18,6 +18,6 @@ fi
 
 cd $netbirdPath
 gomobile init
-CGO_ENABLED=0 gomobile bind  -o $rn_app_path/android/netbird/netbird.aar -javapkg=io.netbird.gomobile  -ldflags="-X golang.zx2c4.com/wireguard/ipc.socketDirectory=/data/data/io.netbird.client/cache/wireguard -X github.com/netbirdio/netbird/version.version=$version" $netbirdPath/client/android
+CGO_ENABLED=0 gomobile bind  -o $rn_app_path/android/netbird/netbird.aar -javapkg=io.netbird.gomobile  -ldflags="-X golang.zx2c4.com/wireguard/ipc.socketDirectory=/data/data/io.netbird.client/cache/wireguard -X github.com/netbirdio/netbird/version.version=$version -checklinkname=0" $netbirdPath/client/android
 
 cd -
